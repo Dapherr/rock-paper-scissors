@@ -1,3 +1,4 @@
+// Returns user's choice of rock, paper, or scissors
 function getHumanChoice() {
     const humanChoice = prompt('Enter "Rock", "Paper", or "Scissors" to start the game:')
     let result;
@@ -15,6 +16,7 @@ function getHumanChoice() {
     return result;
 }
 
+// Returns rock, paper, or scissors at random
 function getComputerChoice() {
     const computerChoice = Math.random();
     let result;
@@ -33,6 +35,7 @@ function getComputerChoice() {
 const computerChoice = getComputerChoice();
 const humanChoice = getHumanChoice();
 
+// Determines a round winner based on both the human and computer choices
 function playRound(computerChoice, humanChoice) {
     let result;
 
