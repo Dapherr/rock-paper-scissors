@@ -33,32 +33,14 @@ const computerChoice = getComputerChoice();
 const humanChoice = getHumanChoice();
 
 function playRound(computerChoice, humanChoice) {
-    if (computerChoice = 'rock') {
-        if (humanChoice = 'paper') {
-            result = 'You win!'
-        } else if (humanChoice = 'scissors') {
-            result = 'You lose.'
-        }
-        else {
-            result = 'Tie.'
-        }
-    } else if (computerChoice = 'paper') {
-        if (humanChoice = 'scissors') {
-            result = 'You win!'
-        } else if (humanChoice = 'rock') {
-            result = 'You lose.'
-        }
-        else {
-            result = 'Tie.'
-        }
-    } else if (computerChoice = 'scissors') {
-        if (humanChoice = 'rock') {
-            result = 'You win!'
-        } else if (humanChoice = 'paper') {
-            result = 'You lose.'
-        } else {
-            result = 'Tie.'
-        }
+    if (computerChoice = humanChoice) {
+        result = 'Tie'
+    } else if ((computerChoice = 'rock') && (humanChoice = 'paper')) {
+        result = 'You win!'
+    } else if ((computerChoice = 'paper') && (humanChoice = 'rock')) {
+        result = 'You win!'
+    } else if ((computerChoice = 'paper') && (humanChoice = 'scissors')) {
+        result = 'You win!'
     }
 
     return result;
