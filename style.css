@@ -4,11 +4,37 @@
     box-sizing: border-box;
 }
 
-#container {
+#results {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 150px;
+    margin-bottom: 100px;
+}
+
+.playerOne,
+.playerTwo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 32px;
+}
+
+.playerName {
+    font-size: 48px;
+}
+
+.playerScore {
+    font-size: 32px;
+}
+
+#choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    height: 300px;
 }
 
 .choice {
