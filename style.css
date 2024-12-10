@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+.choice {
+    padding: 16px 32px;
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 8px;
+}
