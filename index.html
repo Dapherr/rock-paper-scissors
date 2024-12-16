@@ -10,20 +10,33 @@
 </head>
 
 <body>
-    <div id="results">
+    <div id="scoreboard">
         <div class="playerOne">
-            <h2 class="playerName">You</h2>
-            <p class="playerScore">2</p>
+            <h2 class="playerOneName">You</h2>
+            <p class="playerOneScore">0</p>
         </div>
         <div class="playerTwo">
-            <h2 class="playerName">Computer</h2>
-            <p class="playerScore">1</p>
+            <h2 class="playerTwoName">Computer</h2>
+            <p class="playerTwoScore">0</p>
+        </div>
+    </div>
+    <div id="results">
+        <div class="playerChoices">
+            <div class="playerResult">
+                <p></p>
+            </div>
+            <div class="computerResult">
+                <p></p>
+            </div>
+        </div>
+        <div class="roundWinner">
+            <p></p>
         </div>
     </div>
     <div id="choices">
-        <button class="choice rock">Rock</button>
-        <button class="choice paper">Paper</button>
-        <button class="choice scissors">Scissors</button>
+        <button id="rockButton" class="choiceButton">Rock</button>
+        <button id="paperButton" class="choiceButton">Paper</button>
+        <button id="scissorsButton" class="choiceButton">Scissors</button>
     </div>
 </body>
 

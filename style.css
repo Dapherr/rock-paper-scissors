@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-#results {
+#scoreboard {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,12 +21,30 @@
     gap: 32px;
 }
 
-.playerName {
+.playerOneName,
+.playerTwoName {
     font-size: 48px;
 }
 
-.playerScore {
+.playerOneScore,
+.playerTwoScore {
     font-size: 32px;
+}
+
+#results {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    font-size: 24px;
+}
+
+.playerChoices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
 }
 
 #choices {
@@ -37,7 +55,7 @@
     height: 300px;
 }
 
-.choice {
+.choiceButton {
     padding: 16px 32px;
     background-color: #333;
     color: #fff;
